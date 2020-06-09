@@ -1,9 +1,9 @@
 #imports of python modules
 from discord_webhook import DiscordWebhook, DiscordEmbed
 #Setting the webhook URL
-#WebhookUrl = ['https://discordapp.com/api/webhooks/636360687668690985/ap5AMc15BLz4M4SM84uiW2Wx93KiUbnx7BkVyRjAfD2fXn7c7qjf0HlWtbZO16i1CkJ-', 'https://discordapp.com/api/webhooks/712738328985862187/ndNF5Wospo9wqIaWD4TiFWhfQQ4_78cX9McI5hd0ooFsTUSCvRVnFYFf9ntijfiv2dA2']
+#WebhookUrl = ['WEBHOOK1', 'WEBHOOK2']
 #use [] to use multiple webhooks
-WebhookUrl = 'https://discordapp.com/api/webhooks/636360687668690985/ap5AMc15BLz4M4SM84uiW2Wx93KiUbnx7BkVyRjAfD2fXn7c7qjf0HlWtbZO16i1CkJ-'
+WebhookUrl = 'WEBHOOK1'
 def post_discord(Field2):
 #Selecting the url for the webhook
     webhook = DiscordWebhook(url=WebhookUrl, username='Username', avatar_url='https://avatars3.githubusercontent.com/u/62259640?s=460&u=6124b4b9ed87018e1dfe84a2138393011154cd50&v=4')
