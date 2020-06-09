@@ -1,13 +1,13 @@
 #imports of python modules
 from discord_webhook import DiscordWebhook, DiscordEmbed
 #Setting the webhook URL
-#WebhookUrl = ['webhook1', 'webhook2']
+#WebhookUrl = ['https://discordapp.com/api/webhooks/636360687668690985/ap5AMc15BLz4M4SM84uiW2Wx93KiUbnx7BkVyRjAfD2fXn7c7qjf0HlWtbZO16i1CkJ-', 'https://discordapp.com/api/webhooks/712738328985862187/ndNF5Wospo9wqIaWD4TiFWhfQQ4_78cX9McI5hd0ooFsTUSCvRVnFYFf9ntijfiv2dA2']
 #use [] to use multiple webhooks
-WebhookUrl = 'webhook1'
+WebhookUrl = 'https://discordapp.com/api/webhooks/636360687668690985/ap5AMc15BLz4M4SM84uiW2Wx93KiUbnx7BkVyRjAfD2fXn7c7qjf0HlWtbZO16i1CkJ-'
 def post_discord(Field2):
 #Selecting the url for the webhook
     webhook = DiscordWebhook(url=WebhookUrl, username='Username', avatar_url='https://avatars3.githubusercontent.com/u/62259640?s=460&u=6124b4b9ed87018e1dfe84a2138393011154cd50&v=4')
-#Starting the embed
+#Starting the embed. Color is hex color but replace # with 0x. Use https://www.spycolor.com/. 
     embed = DiscordEmbed(title='A Title', description='A description \n with 2 lines', color=0x00FF00, url='https://google.com')
 #Adding more info
     embed.add_embed_field(name='Field 1', value='Field 1 text')
