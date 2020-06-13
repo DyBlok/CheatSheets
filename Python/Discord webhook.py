@@ -6,7 +6,7 @@ from discord_webhook import DiscordWebhook, DiscordEmbed
 WebhookUrl = 'WEBHOOK1'
 def post_discord(Field2):
 #Selecting the url for the webhook
-    webhook = DiscordWebhook(url=WebhookUrl, username='Username', avatar_url='https://avatars3.githubusercontent.com/u/62259640?s=460&u=6124b4b9ed87018e1dfe84a2138393011154cd50&v=4')
+    webhook = DiscordWebhook(url=WebhookUrl, content='Message', username='Username', avatar_url='https://avatars3.githubusercontent.com/u/62259640?s=460&u=6124b4b9ed87018e1dfe84a2138393011154cd50&v=4')
 #Starting the embed. Color is hex color but replace # with 0x. Use https://www.spycolor.com/. 
     embed = DiscordEmbed(title='A Title', description='A description \n with 2 lines', color=0x00FF00, url='https://google.com')
 #Adding more info
