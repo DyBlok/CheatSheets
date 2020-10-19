@@ -1,7 +1,7 @@
 #imports of python modules
 import requests
 from bs4 import BeautifulSoup
-#Setting the url we will be requesting from
+#site the url we will be requesting from
 url = 'http://books.toscrape.com/'
 
 #using headers because a lot of sites require it
